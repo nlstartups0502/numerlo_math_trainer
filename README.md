@@ -1,72 +1,167 @@
-# Numerlo - Math Trainer
+# Updated Legal Documents for Numerlo - Math Trainer
 
-Legal documents and policies for the Numerlo iOS app.
+## What's Included
 
-## 🔢 About Numerlo
+This package contains 4 updated legal documents for your app with subscription features:
 
-Numerlo is an educational iOS app that helps users improve their mental math skills through gamified quizzes and timed challenges.
+1. **privacy-policy.md** - Updated Privacy Policy (Markdown)
+2. **terms-of-service.md** - Updated Terms of Service (Markdown)
+3. **privacy.html** - Updated Privacy Policy (HTML)
+4. **terms.html** - Updated Terms of Service (HTML)
 
-**Features:**
-- Mental math practice
-- Timed challenges
-- Point-based scoring
-- Optional leaderboard (email required)
-- Monthly and annual subscriptions with 3-day free trial
+## What's Changed
 
-## 📄 Legal Documents
+### Privacy Policy Updates:
+✅ Added section on local data storage (games, streaks, subscription status)
+✅ Added section on subscription verification with Apple
+✅ Clarified that payment info goes to Apple, not you
+✅ Added explanation of Free vs Premium tiers
+✅ Updated date to January 24, 2026
 
-This repository hosts the legal documents required for App Store submission:
+### Terms of Service Updates:
+✅ Added complete subscription terms section
+✅ Added pricing details ($4.99/month, $49.99/year)
+✅ Added 7-day free trial terms
+✅ Added payment and renewal terms
+✅ Added cancellation and refund policies
+✅ Added promotional offers section
+✅ Added service tiers (Free vs Premium) details
+✅ Updated license to use section (no circumventing subscription)
+✅ Updated date to January 24, 2026
 
-### Privacy Policy
-- **Web Version:** [View Privacy Policy](https://yourusername.github.io/your-repo-name/privacy.html)
-- **Markdown:** [legal/privacy-policy.md](legal/privacy-policy.md)
+## Where to Place These Files
 
-### Terms of Service
-- **Web Version:** [View Terms of Service](https://yourusername.github.io/your-repo-name/terms.html)
-- **Markdown:** [legal/terms-of-service.md](legal/terms-of-service.md)
+### In Your GitHub Repository:
 
-### Landing Page
-- **Web Version:** [View Legal Portal](https://yourusername.github.io/your-repo-name/)
-
-## 🌐 GitHub Pages
-
-These documents are hosted via GitHub Pages. The HTML versions in the `/docs` folder are formatted for web viewing and used in App Store Connect.
-
-**Privacy Policy URL (for App Store Connect):**
+**Markdown Files (for GitHub):**
 ```
-https://yourusername.github.io/your-repo-name/privacy.html
+/legal/privacy-policy.md  ← Replace with new privacy-policy.md
+/legal/terms-of-service.md  ← Replace with new terms-of-service.md
 ```
 
-## 📱 Privacy Overview
+**HTML Files (for website/app hosting):**
+```
+/docs/privacy.html  ← Replace with new privacy.html
+/docs/terms.html  ← Replace with new terms.html
+```
 
-Numerlo collects minimal data:
-- **Optional:** Email addresses for leaderboard participation
-- **Local:** Game progress stored on device only
-- **Subscriptions:** Processed through Apple (we don't see payment info)
+## How to Update
 
-Full details in the [Privacy Policy](legal/privacy-policy.md).
+### Option 1: Manual Upload
+1. Go to your GitHub repository
+2. Navigate to `/legal/` folder
+3. Click on `privacy-policy.md`
+4. Click "Edit" (pencil icon)
+5. Delete all content
+6. Copy and paste content from new `privacy-policy.md`
+7. Commit changes
+8. Repeat for all 4 files
 
-## 🔒 Subscription Details
+### Option 2: Git Command Line
+```bash
+# Navigate to your repo
+cd numerlo_math_trainer-main
 
-- **Plans:** Monthly and Annual
-- **Free Trial:** 3 days for new subscribers
-- **Auto-Renewal:** Yes (can be disabled in iOS Settings)
-- **Cancellation:** Through Apple ID Account Settings
-- **Refunds:** Subject to Apple's refund policy
+# Copy new files
+cp /path/to/privacy-policy.md legal/privacy-policy.md
+cp /path/to/terms-of-service.md legal/terms-of-service.md
+cp /path/to/privacy.html docs/privacy.html
+cp /path/to/terms.html docs/terms.html
 
-Full details in the [Terms of Service](legal/terms-of-service.md).
+# Commit and push
+git add legal/privacy-policy.md legal/terms-of-service.md docs/privacy.html docs/terms.html
+git commit -m "Update legal documents for subscription features"
+git push origin main
+```
 
-## 📧 Contact
+## After Updating GitHub
 
-For questions or support:
-**freelance.actuary.nl@gmail.com**
+### Update App Store Connect:
 
-## 📝 Updates
+1. Go to App Store Connect
+2. Click on your app
+3. Go to "App Information"
+4. Verify these URLs are correct:
+   - Privacy Policy URL: `https://yourusername.github.io/numerlo_math_trainer-main/docs/privacy.html`
+   - Terms & Conditions URL: `https://yourusername.github.io/numerlo_math_trainer-main/docs/terms.html`
+5. Save changes
 
-**Last Updated:** January 17, 2026
+### Update In-App Links:
 
-These documents are reviewed and updated as needed to reflect changes in the app or legal requirements.
+Make sure your app links to the updated documents:
+- Settings page should link to Privacy Policy
+- Subscription page should link to Terms of Service
+- Both should open the HTML versions from your GitHub Pages
+
+## Important Notes
+
+### Apple Review:
+- Apple reviews your Terms & Privacy Policy during app review
+- Make sure the policies match your app's actual functionality
+- Subscription apps are scrutinized more closely
+- Having accurate, complete policies helps avoid rejection
+
+### Required Disclosures:
+✅ Subscription pricing clearly stated
+✅ Auto-renewal clearly stated
+✅ Cancellation process clearly stated
+✅ Free trial terms clearly stated
+✅ What data you collect (or don't collect)
+✅ How payments are processed (through Apple)
+
+### Legal Compliance:
+- These documents are templates and should be reviewed by a lawyer if:
+  - Your app generates significant revenue
+  - You're targeting specific regulated markets
+  - You want extra legal protection
+- For a small indie app, these templates are sufficient for App Store approval
+
+## URLs You'll Need
+
+### For App Store Connect:
+Replace `yourusername` with your actual GitHub username:
+
+**Privacy Policy URL:**
+```
+https://yourusername.github.io/numerlo_math_trainer-main/docs/privacy.html
+```
+
+**Terms of Service URL:**
+```
+https://yourusername.github.io/numerlo_math_trainer-main/docs/terms.html
+```
+
+### For In-App Links:
+Use the same URLs in your app's Settings page and Subscription page.
+
+## Testing
+
+After uploading, test that:
+1. ✅ GitHub Pages are serving the HTML files correctly
+2. ✅ Links in App Store Connect work
+3. ✅ Links in your app open correctly
+4. ✅ Documents display properly on mobile devices
+5. ✅ All sections are present and readable
+
+## Questions?
+
+If you have questions about these documents:
+- Legal questions: Consult a lawyer
+- Technical questions: Contact freelance.actuary.nl@gmail.com
+- App Store questions: Check Apple's App Store Review Guidelines
+
+## Last Updated
+
+All documents updated: January 24, 2026
+
+These documents reflect the current app features:
+- Freemium model (Free tier: 3 games/day)
+- Premium subscription ($4.99/month or $49.99/year)
+- 7-day free trial
+- Apple In-App Purchases
+- No personal data collection
+- Local data storage only
 
 ---
 
-© 2026 Numerlo - Math Trainer. All rights reserved.
+**Ready to upload? Follow the steps above and you're good to go!**
